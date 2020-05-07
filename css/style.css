@@ -27,6 +27,7 @@ header{
   width: 100%;
   top: 0;
   z-index: 1;
+  backdrop-filter: blur(2px);
 }
 
 nav.top-menu{
@@ -53,6 +54,22 @@ header nav.top-menu ul.top-menu-list a{
   margin: 0 1em;
   text-transform: lowercase;
   font-weight: 900;
+  position: relative;
+}
+
+header nav.top-menu ul.top-menu-list a::before{
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background-color: white;
+  bottom: -5px;
+  right: 0;
+  transition: all ease-in-out .5s;
+}
+
+header nav.top-menu ul.top-menu-list a:hover::before{
+  width: 100%;
 }
 
 header nav.top-menu ul.top-menu-list a:last-child{
