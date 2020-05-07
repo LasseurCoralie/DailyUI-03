@@ -63,9 +63,10 @@ header nav.top-menu ul.top-menu-list a::before{
   height: 2px;
   content: '';
   background-color: white;
+  border-radius: 5px;
   bottom: -5px;
   right: 0;
-  transition: all ease-in-out .5s;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) .5s;
 }
 
 header nav.top-menu ul.top-menu-list a:hover::before{
@@ -147,4 +148,15 @@ div.text-zn button.button-home{
   padding: 1rem;
   font-size: 1.5rem;
   transform: translateY(-50%);
+  color: #D34E24;
+  transition: all ease .5s;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+div.text-zn button.button-home:hover{
+  color: white;
+  background-color: #D34E24;
+  box-shadow: rgba(0, 0, 0, .75) 2px 2px 5px;
 }
