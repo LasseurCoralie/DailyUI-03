@@ -1,21 +1,30 @@
 body{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
+  background: url('../img/yosemite.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  
 }
 
 h1{
-  font-family: 'Lemon', cursive;
+  font-family: 'Baloo 2', cursive;
 }
 
 /* HEADER */
 header{
-  background-color: #293241;
+  background-color: rgb(255,255, 255, .3);
   color: white;
-  padding: 1em;
-  backdrop-filter: blur(3px);
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
 nav.top-menu{
+  padding: 1em 2em;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -36,4 +45,12 @@ header nav.top-menu ul.top-menu-list{
 
 header nav.top-menu ul.top-menu-list a{
   margin: 0 1em;
+  text-transform: lowercase;
+  font-weight: 900;
 }
+
+header nav.top-menu ul.top-menu-list a:last-child{
+  margin-right: 0;
+}
+
+/* HOME SECTION */
