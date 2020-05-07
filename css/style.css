@@ -1,5 +1,6 @@
 body{
   font-family: 'Nunito', sans-serif;
+  width: 100%;
   font-size: 16px;
   background: url('../img/yosemite.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -9,8 +10,13 @@ body{
   
 }
 
-h1{
+h1, h2{
   font-family: 'Baloo 2', cursive;
+  text-shadow: rgba(0, 0, 0, .75) 5px 5px 5px;
+}
+
+section.section{
+  padding: 0 8.333%;
 }
 
 /* HEADER */
@@ -54,3 +60,74 @@ header nav.top-menu ul.top-menu-list a:last-child{
 }
 
 /* HOME SECTION */
+
+section.home{
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: rgba(0, 0, 0, .50) 3px 3px 3px;
+}
+
+h2.main-title{
+  font-size: 10vw;
+  text-transform: uppercase;
+  color: white;
+}
+
+div.informations{
+  background-image: linear-gradient(to top, rgba(255, 255, 255, .55), rgba(255, 255, 255, 0));
+  border-radius: .5rem;
+  display: inline-grid;
+  grid-template-columns: 33% 66%;
+  padding: 4rem 2rem 6rem;
+}
+
+div.informations div {
+  margin-top: 6rem;
+}
+
+div.number-information p{
+  font-size: 2rem;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+div.number-information p span.number{
+  font-family: 'Baloo 2', cursive;
+  display: block;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+div.text-information h3 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-shadow: rgba(0, 0, 0, .85) 2px 2px 2px;
+}
+
+div.text-information h3 span.logo-txt {
+  font-size: 3rem;
+  font-family: 'Baloo 2', cursive;
+}
+
+div.text-information p.regular-txt {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: white;
+  text-shadow: rgba(0, 0, 0, .95) 1px 1px 2px;
+
+}
+
+div.text-zn button.button-home{
+  border: none;
+  background-color: white;
+  border-radius: .3em;
+  padding: 1rem;
+  font-size: 1.5rem;
+  transform: translateY(-50%);
+}
