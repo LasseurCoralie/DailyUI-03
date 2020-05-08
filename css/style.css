@@ -79,6 +79,12 @@ header nav.top-menu ul.top-menu-list a:last-child{
 
 /* HOME SECTION */
 
+a.home-anchor{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 section.home{
   text-align: center;
   height: 100vh;
@@ -89,7 +95,7 @@ section.home{
 }
 
 h2.main-title{
-  font-size: 10vw;
+  font-size: 10vmax;
   text-transform: uppercase;
   color: white;
 }
@@ -152,11 +158,29 @@ div.text-zn button.button-home{
   transition: all ease .5s;
   font-weight: bold;
   font-family: 'Nunito', sans-serif;
-
 }
 
 div.text-zn button.button-home:hover{
   color: white;
   background-color: #D34E24;
   box-shadow: rgba(0, 0, 0, .75) 2px 2px 5px;
+}
+
+/* DETAIL SECTION */
+
+section.details{
+  height: 100vh;
+  background-image: url('../img/palmtrees.png');
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  filter: brightness(.7);
+  position: relative;
+}
+
+a.details-anchor{
+  position: absolute;
+  top:0;
+  left: 0;
 }
