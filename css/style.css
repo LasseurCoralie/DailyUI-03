@@ -95,7 +95,7 @@ section.home{
 }
 
 h2.main-title{
-  font-size: 10vmax;
+  font-size: 10vw;
   text-transform: uppercase;
   color: white;
 }
@@ -105,7 +105,7 @@ div.informations{
   border-radius: .5rem;
   display: inline-grid;
   grid-template-columns: 33% 66%;
-  padding: 4rem 2rem 6rem;
+  padding: 0 2rem 6rem;
 }
 
 div.informations div {
@@ -175,12 +175,67 @@ section.details{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  filter: brightness(.7);
   position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 a.details-anchor{
   position: absolute;
   top:0;
   left: 0;
+}
+
+section.details h2.subtitles {
+  font-family: 'Baloo 2', cursive;
+  font-size: 4em;
+}
+
+section.details div.content-zn{
+  width: 100%;
+}
+
+section.details div.informations-zn{
+  display: flex;
+  justify-content: space-between;
+}
+
+section.details div.informations-zn div.information{
+  width: 20%;
+  text-align: center;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, .55), rgba(255, 255, 255, 0));
+  border-radius: .5rem;
+  padding: 2em 1.5em;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+
+section.details div.informations-zn div.information h3.number-title{
+  font-family: 'Baloo 2', cursive;
+  font-size: 4em;
+  display: block;
+  text-align: left;
+  text-shadow: rgba(0, 0, 0, .75) 5px 5px 5px;
+
+}
+
+section.details div.informations-zn div.information img{
+  width:35%;
+  height: auto;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+section.details div.informations-zn div.information h4.slogan{
+  font-weight: 800;
+  margin-bottom: .5em;
+  line-height: 1.2em;
+
+}
+
+section.details div.informations-zn div.information p.regular-txt{
+  line-height: 1.2em;
 }
