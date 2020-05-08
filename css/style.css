@@ -147,7 +147,7 @@ div.text-information p.regular-txt {
 
 }
 
-div.text-zn button.button-home{
+button.button-home{
   border: none;
   background-color: white;
   border-radius: .3em;
@@ -160,7 +160,7 @@ div.text-zn button.button-home{
   font-family: 'Nunito', sans-serif;
 }
 
-div.text-zn button.button-home:hover{
+button.button-home:hover{
   color: white;
   background-color: #D34E24;
   box-shadow: rgba(0, 0, 0, .75) 2px 2px 5px;
@@ -204,11 +204,11 @@ section.details div.informations-zn{
 }
 
 section.details div.informations-zn div.information{
-  width: 20%;
+  width: 23%;
   text-align: center;
   background-image: linear-gradient(to top, rgba(255, 255, 255, .55), rgba(255, 255, 255, 0));
   border-radius: .5rem;
-  padding: 2em 1.5em;
+  padding: 2em 1.5em 3em;
   font-size: 1.5rem;
   box-sizing: border-box;
 }
@@ -238,4 +238,14 @@ section.details div.informations-zn div.information h4.slogan{
 
 section.details div.informations-zn div.information p.regular-txt{
   line-height: 1.2em;
+}
+
+section.details button.button-home{
+  background-color: white;
+  color: #195319;
+}
+
+section.details button.button-home:hover{
+  background-color: #195319;
+  color: white;
 }
