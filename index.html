@@ -3,17 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DailyUI 02</title>
+    <title>DailyUI 02 - MakeMyJourney</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Nunito:wght@400;800&display=swap" rel="stylesheet">  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Nunito:wght@400;800&display=swap" rel="stylesheet">
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <script>
+      map = new OpenLayers.Map("demoMap");
+      map.addLayer(new OpenLayers.Layer.OSM());
+      map.zoomToMaxExtent();
+  </script>
+  </head>
 
   <body>
-    <div class="wrapper"></div>
     <header>
       <nav class="top-menu">
         <a href="#">
-          <h1 class="top-logo">My Roadtrip</h1>
+          <h1 class="top-logo">MakeMyJourney</h1>
         </a>
         <ul class="top-menu-list">
           <a href="#home"><li class="detail-list">Home</li></a>
@@ -26,101 +32,137 @@
 
     <main>
       <section class="section home">
-        <a class="home-anchor" id="home"></a>
-        <div class="text-zn">
-          <h2 class="main-title">Your dream trip</h2>
-          <div class="informations">
-            <div class="number-information">
-              <p><span class="number">2498</span>people made<br/> their trip <br/>comme true</p>
+        <div class="content-wraper">
+          <a class="home-anchor" id="home"></a>
+          <div class="text-zn">
+            <h2 class="main-title">Your dream trip</h2>
+            <div class="informations">
+              <div class="number-information">
+                <p><span class="number">2498</span>people made<br/> their trip <br/>comme true</p>
+              </div>
+              <div class="text-information">
+                <h3>with <span class="logo-txt">MakeMyJourney</span> <br/>plan your next trip!</h3>
+                <p class="regular-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel tenetur sit accusantium iure, vitae ullam ipsum aliquam iste cum officia a alias, eum provident veritatis dolores nihil doloremque minus facilis beatae officiis dicta explicabo. Tempore eligendi, molestias atque ullam consequuntur incidunt, saepe voluptatem cupiditate similique ipsam quis optio facere.</p>
+              </div>
             </div>
-            <div class="text-information">
-              <h3>with <span class="logo-txt">MakeMyJourney</span> plan your next trip!</h3>
-              <p class="regular-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel tenetur sit accusantium iure, vitae ullam ipsum aliquam iste cum officia a alias, eum provident veritatis dolores nihil doloremque minus facilis beatae officiis dicta explicabo. Tempore eligendi, molestias atque ullam consequuntur incidunt, saepe voluptatem cupiditate similique ipsam quis optio facere.</p>
-            </div>
+            <button class="button-home">plan my trip!</button>
           </div>
-          <button class="button-home">plan my trip!</button>
         </div>
       </section>
 
       <section class="section details">
-        <a id="howitworks" class="details-anchor"></a>
-        <div class="content-zn">
-          <h2 class="subtitles">How it works</h2>
-          <div class="informations-zn">
-            <div class="information">
-              <h3 class="number-title">1.</h3>
-              <img src="img/icones/002-appointment.png" alt="" class="icon" id="n01">
-              <h4 class="slogan">Tell us your <br/>availabilities</h4>
-              <p class="regular-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor a nihil earum ab magni rerum.</p>
+        <div class="content-wraper">
+          <a id="howitworks" class="details-anchor"></a>
+          <div class="content-zn">
+            <h2 class="subtitles">How it works</h2>
+            <div class="informations-zn">
+              <div class="information">
+                <h3 class="number-title">1.</h3>
+                <img src="img/icones/002-appointment.png" alt="" class="icon" id="n01">
+                <h4 class="slogan">Tell us your <br/>availabilities</h4>
+                <p class="regular-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor a nihil earum ab magni rerum.</p>
+              </div>
+              <div class="information">
+                <h3 class="number-title">2.</h3>
+                <img src="img/icones/001-planet-earth.png" alt="" class="icon" id="n02">
+                <h4 class="slogan">Choose the country <br/>you want to visit</h4>
+                <p class="regular-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor a nihil earum ab magni rerum.</p>
+              </div>
+              <div class="information">
+                <h3 class="number-title">3.</h3>
+                <img src="img/icones/003-university.png" alt="" class="icon" id="n03">
+                <h4 class="slogan">Pick the places <br/>you don't wanna miss</h4>
+                <p class="regular-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor a nihil earum ab magni rerum.</p>
+              </div>
+              <div class="information">
+                <h3 class="number-title">4.</h3>
+                <img src="img/icones/004-airplane.png" alt="" class="icon" id="n04">
+                <h4 class="slogan">Enjoy your <br/>perfect holidays!</h4>
+                <p class="regular-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor a nihil earum ab magni rerum.</p>
+              </div>
             </div>
-            <div class="information">
-              <h3 class="number-title">2.</h3>
-              <img src="img/icones/001-planet-earth.png" alt="" class="icon" id="n02">
-              <h4 class="slogan">Choose the country <br/>you want to visit</h4>
-              <p class="regular-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor a nihil earum ab magni rerum.</p>
-            </div>
-            <div class="information">
-              <h3 class="number-title">3.</h3>
-              <img src="img/icones/003-university.png" alt="" class="icon" id="n03">
-              <h4 class="slogan">Pick the places <br/>you don't wanna miss</h4>
-              <p class="regular-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor a nihil earum ab magni rerum.</p>
-            </div>
-            <div class="information">
-              <h3 class="number-title">4.</h3>
-              <img src="img/icones/004-airplane.png" alt="" class="icon" id="n04">
-              <h4 class="slogan">Enjoy your <br/>perfect holidays!</h4>
-              <p class="regular-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor a nihil earum ab magni rerum.</p>
-            </div>
+            <button class="button-home">i want more info</button>
           </div>
-          <button class="button-home">i want more info</button>
         </div>
       </section>
 
       <section class="section plan-trip">
+        <a id="toptrip" class="toptrip-anchor"></a>
         <div class="left-part">
-          <h2 class="subtitle"><a id="toptrip"></a>Tiptop Trip</h2>
-          <p class="regular-txt"></p>
-          <div class="details">
-            <h3 class="detail-title">Details</h3>
-            <ul class="list-details">
-              <li class="detail">Time</li>
-              <li class="detail">Km</li>
-              <li class="detail">Visits</li>
-            </ul>
-            <button type="button-home">Let's go!</button>
+          <p class="hashtag">#topTrip</p>
+          <h2 class="subtitle">Grand Loop Road</h2>
+          <div class="text-img-content">
+            <p class="regular-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laborum doloribus nostrum, perferendis omnis nemo fugiat id fuga! Ssit amet consectetur adipisicing.</p>
+            <img class="img-top" src="img/yannick-menard-ISs7qT9fEn8-unsplash.jpg" alt="">
+            <img class="img-down" src="img/chris-leipelt-qVmbifOhp8c-unsplash.jpg" alt="">
+            <div class="details">
+              <h3 class="detail-title">Details</h3>
+              <ul class="list-details">
+                <li class="detail">24 days trip</li>
+                <li class="detail">750 miles/1207 km</li>
+                <li class="detail">4 visited town</li>
+              </ul>
+            </div>
+          </div>
+          <div class="button">
+            <button class="button-home">i want more informations</button>
           </div>
         </div>
-        <div class="right-part">
-          <img src="#" alt="" class="map">
+        <div class="right-part" id="demoMap">
+          <div class="img-map"></div>
         </div>
       </section>
 
       <section class="section more-trips">
-        <h2 class="subtitle"><a id="destinations"></a>Choose my destination</h2>
-        <div class="destinations">
-          <div class="destination">
-            <img src="" alt="#" class="img-destination">
-          </div>
-          <div class="destination">
-            <img src="" alt="#" class="img-destination">
-          </div>
-          <div class="destination">
-            <img src="" alt="#" class="img-destination">
-          </div>
-          <div class="destination">
-            <img src="" alt="#" class="img-destination">
+        <div class="content-wraper">
+          <h2 class="subtitles"><a id="destinations"></a>Where are you going?</h2>
+          <div class="destinations">
+            <div class="destination">
+              <div class="img-block">
+                  <img src="img/italy.jpg" alt="voyages en Italie" class="img-destination">
+                <span class="img-txt">I wanna go <br/>to Italy</span>
+              </div>
+              <p class="txt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, eveniet. Accusantium corporis consequatur, libero porro dolorem eveniet molestiae cupiditate eum?</p>
+            </div>
+            <div class="destination">
+              <div class="img-block">
+                <img src="img/france.jpg" alt="voyages en France" class="img-destination">
+                <span class="img-txt">I wanna go <br/>to France</span>
+              </div>
+              <p class="txt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maiores reiciendis, quod unde hic quisquam voluptatibus culpa tempore est adipisci.</p>
+            </div>
+            <div class="destination">
+              <div class="img-block">
+                <img src="img/japan.jpg" alt="voyages au Japon" class="img-destination">
+                <span class="img-txt">I wanna go <br/>to Japan</span>
+              </div>
+              <p class="txt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ea in vel temporibus quibusdam ipsam tempora beatae minus error totam.</p>
+            </div>
+            <div class="destination">
+              <div class="img-block">
+                <img src="img/malta.jpg" alt="voyages à Malte" class="img-destination">
+                <span class="img-txt">I wanna go <br/>to Malta</span>
+              </div>
+              <p class="txt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nobis quidem architecto sint molestiae? Labore iure explicabo impedit hic earum.</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <h1 class="down-logo">Logo</h1>
+      <h1 class="down-logo">MakeMyJourney</h1>
       <nav class="footer-menu">
         <ul class="footer-menu-list">
-          <li class="footer-list">Who are we?</li>
-          <li class="footer-list">Contact</li>
-          <li class="footer-list">CGV</li>
+          <a href="#" class="list-link">
+            <li class="footer-list">Who are we?</li>
+          </a>
+          <a href="#" class="list-link">
+            <li class="footer-list">Contact</li>
+          </a>
+          <a href="#" class="list-link">
+            <li class="footer-list">CGV</li>
+          </a>
         </ul>
       </nav>
     </footer>

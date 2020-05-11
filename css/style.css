@@ -16,7 +16,16 @@ h1, h2{
 }
 
 section.section{
-  padding: 0 8.333%;
+  padding: 0 5%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.content-wraper{
+  max-width:1024px;
+  text-align: center;
 }
 
 /* HEADER */
@@ -55,6 +64,8 @@ header nav.top-menu ul.top-menu-list a{
   text-transform: lowercase;
   font-weight: 900;
   position: relative;
+  text-shadow: rgba(0, 0, 0, .95) 1px 1px 2px;
+
 }
 
 header nav.top-menu ul.top-menu-list a::before{
@@ -87,15 +98,11 @@ a.home-anchor{
 
 section.home{
   text-align: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-shadow: rgba(0, 0, 0, .50) 3px 3px 3px;
 }
 
 h2.main-title{
-  font-size: 10vw;
+  font-size: 6em;
   text-transform: uppercase;
   color: white;
 }
@@ -105,26 +112,25 @@ div.informations{
   border-radius: .5rem;
   display: inline-grid;
   grid-template-columns: 33% 66%;
-  padding: 0 2rem 6rem;
+  padding: 0 2rem 4rem;
 }
 
 div.informations div {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 div.number-information p{
   font-size: 2rem;
   color: white;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 3rem;
 }
 
 div.number-information p span.number{
   font-family: 'Baloo 2', cursive;
   display: block;
-  font-size: 5rem;
-  margin-bottom: 1rem;
+  font-size: 4rem;
 }
 
 div.text-information h3 {
@@ -140,7 +146,7 @@ div.text-information h3 span.logo-txt {
 }
 
 div.text-information p.regular-txt {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2rem;
   color: white;
   text-shadow: rgba(0, 0, 0, .95) 1px 1px 2px;
@@ -152,7 +158,7 @@ button.button-home{
   background-color: white;
   border-radius: .3em;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transform: translateY(-50%);
   color: #D34E24;
   transition: all ease .5s;
@@ -169,7 +175,6 @@ button.button-home:hover{
 /* DETAIL SECTION */
 
 section.details{
-  height: 100vh;
   background-image: url('../img/palmtrees.png');
   background-size: cover;
   -webkit-background-size: cover;
@@ -177,10 +182,8 @@ section.details{
   -o-background-size: cover;
   position: relative;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: white;
+  padding-top: 2rem;
 }
 
 a.details-anchor{
@@ -206,10 +209,10 @@ section.details div.informations-zn{
 section.details div.informations-zn div.information{
   width: 23%;
   text-align: center;
-  background-image: linear-gradient(to top, rgba(255, 255, 255, .55), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to top, rgba(255, 255, 255, .40), rgba(255, 255, 255, 0));
   border-radius: .5rem;
-  padding: 2em 1.5em 3em;
-  font-size: 1.5rem;
+  padding: 2em 1.5em 5em;
+  font-size: 1rem;
   box-sizing: border-box;
 }
 
@@ -223,21 +226,21 @@ section.details div.informations-zn div.information h3.number-title{
 }
 
 section.details div.informations-zn div.information img{
-  width:35%;
+  width:40%;
   height: auto;
-  margin-bottom: 1em;
-  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-top: 3em;
 }
 
 section.details div.informations-zn div.information h4.slogan{
   font-weight: 800;
-  margin-bottom: .5em;
-  line-height: 1.2em;
+  margin-bottom: 1em;
+  line-height: 1.5em;
 
 }
 
 section.details div.informations-zn div.information p.regular-txt{
-  line-height: 1.2em;
+  line-height: 1.5em;
 }
 
 section.details button.button-home{
@@ -248,4 +251,198 @@ section.details button.button-home{
 section.details button.button-home:hover{
   background-color: #195319;
   color: white;
+}
+
+/* TOP TRIP SECTION */
+
+section.plan-trip{
+  position: relative;
+  background-color: #B8860B;
+  padding-right: 0;
+}
+
+section.plan-trip div.content-wraper{
+  display: flex;
+}
+
+a.toptrip-anchor{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+section.plan-trip div.left-part, div.right-part{
+  width: 50%;
+}
+
+section.plan-trip div.left-part{
+  color: white;
+}
+
+section.plan-trip div.left-part p.hashtag {
+  font-size: 2em;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+section.plan-trip div.left-part h2.subtitle {
+  text-shadow: none;
+  font-size: 4em;
+  margin-bottom: 1.5rem;
+}
+
+section.plan-trip div.right-part{
+  height: 100%;
+  
+}
+
+section.plan-trip div.right-part div.img-map {
+  background-image: url('../img/map.jpg');
+  width: 100%;
+  height: 100%;
+}
+
+div.text-img-content{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+}
+
+div.text-img-content img{
+  width: auto;
+  max-height: 200px;
+  margin-bottom: 2em;
+  border-radius: .2em;
+}
+
+
+div.text-img-content img.img-down{
+  padding-right: .5rem;
+}
+
+div.text-img-content p.regular-txt{
+  line-height: 1.5em;
+  font-size: 1rem;
+  margin-right: 1em;
+}
+
+div.text-img-content div.details{
+  margin-left: 1rem;
+}
+
+div.text-img-content div.details h3{
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+div.text-img-content div.details ul.list-details{
+  margin-left: 1rem;
+  line-height: 2rem;
+}
+
+section.plan-trip div.button{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+section.plan-trip button.button-home{
+  color: #B8860B;
+}
+
+section.plan-trip button.button-home:hover{
+  color: white;
+  background-color: rgb(48, 12, 39);
+}
+
+/* SECTION MORE TRIPS */
+
+section.more-trips{
+  flex-direction: column;
+}
+
+section.more-trips h2.subtitles {
+  font-family: 'Baloo 2', cursive;
+  font-size: 4em;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+section.more-trips div.destinations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section.more-trips div.destinations div.destination{
+  width: 23%; 
+}
+
+section.more-trips div.destinations div.destination div.img-block{
+  position: relative;
+  text-align: center;
+}
+
+section.more-trips div.destinations div.destination span.img-txt{
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) ;
+  top: 0;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  line-height: 1.5rem;
+}
+
+section.more-trips div.destinations div.destination div.img-block img, span.img-txt{
+  transition: all ease .3s;
+}
+
+section.more-trips div.destinations div.destination div.img-block:hover span.img-txt{
+  display: inline;
+  top: 45%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+section.more-trips div.destinations div.destination div.img-block:hover img{
+  filter: brightness(.3);
+}
+
+section.more-trips div.destinations div.destination p.txt-description{
+  color: white;
+  line-height: 1.5rem;
+  margin: 0 .3rem;
+}
+
+
+section.more-trips div.destinations img{
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+}
+
+nav.footer-menu ul.footer-menu-list{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav.footer-menu ul.footer-menu-list li.footer-list{
+  margin-left: 1rem;
+}
+
+nav.footer-menu ul.footer-menu-list li.footer-list:hover{
+  text-decoration: underline;
 }
