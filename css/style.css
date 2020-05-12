@@ -253,108 +253,6 @@ section.details button.button-home:hover{
   color: white;
 }
 
-/* TOP TRIP SECTION */
-
-section.plan-trip{
-  position: relative;
-  background-color: #B8860B;
-  padding-right: 0;
-}
-
-section.plan-trip div.content-wraper{
-  display: flex;
-}
-
-a.toptrip-anchor{
-  position: absolute;
-  top:0;
-  left: 0;
-}
-
-section.plan-trip div.left-part, div.right-part{
-  width: 50%;
-}
-
-section.plan-trip div.left-part{
-  color: white;
-}
-
-section.plan-trip div.left-part p.hashtag {
-  font-size: 2em;
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-}
-
-section.plan-trip div.left-part h2.subtitle {
-  text-shadow: none;
-  font-size: 4em;
-  margin-bottom: 1.5rem;
-}
-
-section.plan-trip div.right-part{
-  height: 100%;
-  
-}
-
-section.plan-trip div.right-part div.img-map {
-  background-image: url('../img/map.jpg');
-  width: 100%;
-  height: 100%;
-}
-
-div.text-img-content{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto;
-}
-
-div.text-img-content img{
-  width: auto;
-  max-height: 200px;
-  margin-bottom: 2em;
-  border-radius: .2em;
-}
-
-
-div.text-img-content img.img-down{
-  padding-right: .5rem;
-}
-
-div.text-img-content p.regular-txt{
-  line-height: 1.5em;
-  font-size: 1rem;
-  margin-right: 1em;
-}
-
-div.text-img-content div.details{
-  margin-left: 1rem;
-}
-
-div.text-img-content div.details h3{
-  text-transform: uppercase;
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-
-div.text-img-content div.details ul.list-details{
-  margin-left: 1rem;
-  line-height: 2rem;
-}
-
-section.plan-trip div.button{
-  text-align: center;
-  margin-top: 2rem;
-}
-
-section.plan-trip button.button-home{
-  color: #B8860B;
-}
-
-section.plan-trip button.button-home:hover{
-  color: white;
-  background-color: rgb(48, 12, 39);
-}
-
 /* SECTION MORE TRIPS */
 
 section.more-trips{
@@ -452,3 +350,98 @@ nav.footer-menu ul.footer-menu-list li.footer-list:hover{
   text-decoration: underline;
 }
 
+@media all and (max-width: 800px){
+  header
+}
+
+
+@media all and (max-width: 600px){
+
+  section.section{
+    height: auto;
+    display: block;
+  }
+
+  /* HEADER */
+  header nav.top-menu {
+    display: block;
+    text-align: center;
+  }
+
+  header nav.top-menu h1.top-logo{
+    margin-bottom: 1rem;
+  }
+
+  header nav.top-menu ul.top-menu-list{
+    justify-content: center;
+  }
+
+  header nav.top-menu ul.top-menu-list li.detail-list{
+    font-size: 1.2rem;
+  }
+
+  /* HOME */
+
+  section.home div.content-wraper{
+    width: 100%;
+  }
+
+  section.home h2.main-title{
+    font-size: 3em;
+    margin-top: 1rem;
+  }
+
+  section.home div.informations{
+    display: block;
+  }
+
+  section.home div.number-information{
+    margin-top: 3rem;
+  }
+
+  section.home div.number-information p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  section.home div.number-information span.number{
+    font-size: 3rem;
+  }
+
+  section.home div.informations div.text-information{
+    margin-top: 3rem;
+  }
+
+  section.home div.informations div.text-information h3 span.logo-txt{
+    font-size: 2rem;
+  }
+
+  /* HOW IT WORKS */
+
+  section.details{
+    padding-top: 8rem;
+  }
+
+  section.details div.informations-zn {
+    flex-wrap: wrap;
+  }
+
+  section.details div.informations-zn div.information {
+    width: 100%;
+  }
+
+  section.details div.informations-zn div.information{
+    padding-bottom: 2rem;
+  }
+
+  section.details div.informations-zn div.information:last-child{
+    padding-bottom: 4rem;
+  }
+
+  section.details div.informations-zn div.information img {
+    width: 30%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+}
