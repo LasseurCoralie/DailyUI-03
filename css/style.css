@@ -359,6 +359,11 @@ section.plan-trip button.button-home:hover{
 
 section.more-trips{
   flex-direction: column;
+  background: url('../img/yosemite-black.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 section.more-trips h2.subtitles {
@@ -446,3 +451,4 @@ nav.footer-menu ul.footer-menu-list li.footer-list{
 nav.footer-menu ul.footer-menu-list li.footer-list:hover{
   text-decoration: underline;
 }
+
