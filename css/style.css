@@ -350,12 +350,7 @@ nav.footer-menu ul.footer-menu-list li.footer-list:hover{
   text-decoration: underline;
 }
 
-@media all and (max-width: 800px){
-  header
-}
-
-
-@media all and (max-width: 600px){
+@media all and (max-width: 650px){
 
   section.section{
     height: auto;
@@ -387,7 +382,7 @@ nav.footer-menu ul.footer-menu-list li.footer-list:hover{
   }
 
   section.home h2.main-title{
-    font-size: 3em;
+    font-size: 4em;
     margin-top: 1rem;
   }
 
@@ -444,4 +439,31 @@ nav.footer-menu ul.footer-menu-list li.footer-list:hover{
     margin-top: 1em;
   }
 
+  section.details button.button-home {
+    transform: translateY(0);
+    margin: 2rem 0;
+  }
+
+  /* WHERE ARE YOU GOING */
+  section.more-trips div.content-wraper{
+    padding-top: 8rem;
+  }
+
+  section.more-trips div.destinations{
+    display: block;
+  }
+
+  section.more-trips div.destinations div.destination {
+    width: 100%;
+  }
+
+  section.more-trips div.destinations img {
+    width: 80%;
+  }
+
+  section.more-trips div.destinations div.destination{
+    margin-bottom: 4rem;
+  }
+
+  
 }
